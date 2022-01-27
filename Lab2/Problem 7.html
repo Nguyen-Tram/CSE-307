@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Problem 7- Lab 2</title>
+	<style type="text/css">
+
+		body{
+			margin-left: 200px;
+			width: 1000px;
+		}
+
+		.wrapper{
+			display: flex;
+			justify-content: center;
+			
+			max-width: 800px;
+			width: 100%;	
+
+		}
+
+		h2{
+			border-top: 2px dashed black;
+			border-bottom: 2px dashed black;
+			border-left: 7px solid purple;
+			padding: 5px;
+		}
+
+		.button{
+			text-align: center;
+		}
+
+		.button button{
+			
+			color: purple;
+			font-weight: bold;
+			font-size: 16px;
+			border: 3px solid purple;
+			background-color: white;
+			padding: 5px 8px;
+			margin: 5px;
+
+		}
+		
+		.wrapper form{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+
+		}
+
+		.wrapper form .form{
+			margin: 10px 0px;
+			width: calc(100% / 2 - 50px); 
+		}
+
+		.wrapper .form input{
+			width: 100%;
+			height: 25px;
+
+		}
+
+		.wrapper .form .title{
+			display: block;
+			font-weight: bold;
+			margin-bottom: 2px;
+		}
+
+		.submit{
+			margin-top: 10px;
+			margin-left: 300px;
+		}
+
+		.wrapper .submit button{
+			color: purple ;
+			font-weight: bold;
+			font-size: 16px;
+			border: 3px solid purple;
+			background-color: white;
+			padding: 5px 8px;
+		}
+
+		.title:after {
+  			content:" *";
+   			color: red; 
+   		}
+
+   		.red{
+   			color: red;
+   		}
+	</style>
+
+
+</head>
+
+<body>
+	<h2>TÀI KHOẢN CỦA BẠN</h2>
+	<div class="button">
+		<button type="button" style="width: 200px;" >QUẢN LÝ TÀI KHOẢN</button>
+		<button type="button" style="width: 200px;" >QUẢN LÝ ĐƠN HÀNG</button>
+		<button type="button" style="width: 200px;" >THAY ĐỔI MẬT KHẨU</button>
+	</div>	 
+
+	<div>
+		<p>Bạn có thể cập nhật lại thông tin của mình tại các trường dưới đây <br>
+		Lưu ý: Những trường có dấu <span class="red">"*"</span> là bắt buộc</p>
+		
+	</div> 
+
+	<div class="wrapper">
+		<form>
+			<div class="form">
+				<span class="title">Họ và tên</span>
+				<input type="text" name="name" value="Nguyễn Văn A" required>
+			</div>
+
+			<div class="form">
+				<span class="title">Ngày sinh</span>
+				<input type="date" name="ngaysinh" placeholder="01/01/1990" required>
+			</div>
+
+			<div class="form">
+				<span class="title">Tình - Thành phố</span>
+				<input type="text" name="tinh" value ="TP Hồ Chí Minh" required>
+			</div>
+
+			<div class="form">
+				<span class="title">Công ty</span>
+				<input type="text" name="congty" placeholder="Công ty của bạn" required>
+			</div>
+
+			<div class="form">
+				<span class="title">Quận - Huyện</span>
+				<input type="text" name="quan" value="Quận 5" required>
+			</div>
+
+			<div class="form">
+				<span class="title">Chức vụ</span>
+				<input type="text" name="chucvu" placeholder="Chức vụ tại công ty" required>
+			</div>
+
+			<div class="form">
+				<span class="title">Địa chỉ</span>
+				<input type="text" name="diachi" value="TP HCM" required>
+			</div>
+
+			<div class="form">
+				<span class="title">Bạn thích Loại hoa</span>
+				<input type="text" placeholder="Hoa hồng, Hoa lan..." required>
+			</div>
+
+			<div class="form">
+				<span class="title">Số điện thoại</span>
+				<input type="text" name="sdt" value="0123456789" required>
+			</div>
+			
+			<div class="form">
+				<span class="title">Bạn thích Màu hoa</span>
+				<input type="text" placeholder="Màu đỏ, Màu tím..." required>
+			</div>
+
+			<div class="form">
+				<span class="title">Email</span>
+				<input type="text" name="email" value="nguyenvana@gmail.com" required>
+			</div>
+
+			<div class="form">
+				<span class="title">Phong cách cắm hoa</span>
+				<input type="text" placeholder="Cổ điển, Hiện đại, Đơn giản, Dễ thương..." required>
+			</div>
+
+			<div class="submit">
+				<button type="submit" style="width: 200px;" >CẬP NHẬT THÔNG TIN</button>
+				
+			</div>
+
+		</form>
+	</div>
+
+</body>
+</html>

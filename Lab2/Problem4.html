@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Problem 4 - Lab 2</title>
+
+	<style type="text/css">
+		table #main{
+			border: 1px solid;
+			border-collapse: collapse;
+		}
+
+		td{
+			border: 1px solid;
+		}
+
+		table #phone{
+			border-width: none;
+			border-collapse: collapse;
+			border-top-width: 0px;
+		}
+	</style>
+</head>
+<body>
+	<table id="main">
+		<colgroup>
+			<col style="width: 200px;">
+			<col style="width: 500px;">
+		</colgroup>
+
+		<tr>
+			<td style="font-weight: bold; text-align: right;">Last Name</td>	
+			<td><input style="width: 90%;" type="text" name="lastname"></td>
+		</tr>
+
+		<tr>
+			<td style="font-weight: bold; text-align: right;">First Name</td>	
+			<td><input type="text" name="firstname"></td>
+		</tr>
+
+		<tr>
+			<td style="font-weight: bold; text-align: right;">Address</td>	
+			<td>
+				<textarea name="address">
+					
+				</textarea>
+			</td>
+		</tr>
+
+		<tr>
+			<td style="font-weight: bold; text-align: right;">City</td>
+			<td>
+				<table>
+					<colgroup>
+						<col style="width: 300px;">
+						<col style="width: 100px;">
+						<col style="width: 100px;">
+					</colgroup>
+					<tr>
+						<td><input type="text" name="city"></td>
+						<td style="font-weight: bold; text-align: center;">State</td>
+						<td><input type="text" name="state"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td style="font-weight: bold; text-align: right;">Zip/Post al Code</td>	
+			<td><input style="width: 30%;" type="text" name="code"></td>
+		</tr>
+
+		<tr>
+			<td style="font-weight: bold; text-align: right;">Country</td>
+			<td>
+				<select name="country">
+					<option>Bulgaria</option>
+					<option>Việt Nam</option>
+					<option>Anh</option>
+					<option>Mỹ</option>
+					<option>Đan Mạch</option>
+				</select>
+			</td>	
+		</tr>
+
+		<tr>
+			<td style="font-weight: bold; text-align: right;">Phone (country code, area code, number)</td>	
+			<td>
+				<table id="phone">
+					<tr>
+						<td>(+<input style="width: 25%;" type="text" name="">)</td>
+						<td><input style="width: 25%;" type="text" name=""></td>
+						<td>-<input style="width: 50%;" type="text" name=""></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td style="font-weight: bold; text-align: right;">E-mail</td>	
+			<td><input style="width: 90%;" type="text" name="email"></td>
+		</tr>
+
+		<tr>
+			<td style="font-weight: bold; text-align: right;">Birth date</td>
+			
+
+		</tr>
+
+		<tr>
+			<td style="font-weight: bold; text-align: right;">Gender</td>
+			<td>
+				<select name="sex">
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+			</td>
+		</tr>
+
+	</table>
+
+</body>
+</html>
