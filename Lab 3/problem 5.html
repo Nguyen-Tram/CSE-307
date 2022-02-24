@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>International Employees</title>
+
+	<style type="text/css">
+		table{
+			padding: 0px;
+			border-spacing: 0px;
+			border-bottom: 2px solid rgb(187, 185, 157);
+		}
+
+		th,td{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			border-right: 2px solid rgb(187, 185, 157);
+		}
+
+		th:last-child, td:last-child{
+			border-right: none;
+		}
+
+		th{
+			border-bottom: 2px solid rgb(187, 185, 157);
+		}
+
+		thead{
+			text-align: left;
+			color: white;
+			background-color: rgb(92, 192, 6);
+			
+		}
+
+		tbody tr:nth-child(even){
+			background-color: rgb(236, 236, 216);
+		}
+
+		tr td img{
+			max-width: 100%;
+			width: 20px;
+			height: auto;
+			padding-right: 5px;
+		}
+
+		tr input{
+			box-shadow: inset 2px 2px dimgray, 2px 2px white;
+		}
+
+	</style>
+</head>
+<body>
+	<main>
+		<table>
+			<colgroup>
+				<col style="width: 300px;">
+				<col style="width: 200px;">
+				<col style="width: 240px;">
+				<col style="width: 140px;">
+			</colgroup>
+
+			<thead>
+				<th>Contact name</th>
+				<th>City</th>
+				<th>Country</th>
+				<th>Is Promoted</th>
+			</thead>
+
+			<tbody>
+
+				<tr>
+					<td>Maria Anders</td>
+					<td>Berlin</td>
+					<td><img src="D:\Trâm\CSE307\lab3\germany.png">Germany</td>
+					<td><input type="checkbox" name=""></td>
+				</tr>
+
+				<tr>
+					<td>Ana Trujillo</td>
+					<td>Mexico D.F.</td>
+					<td><img src="D:\Trâm\CSE307\lab3\mexico.png">Mexico</td>
+					<td><input type="checkbox" name=""></td>
+				</tr>
+
+				<tr>
+					<td>Antonio Moreo</td>
+					<td>Mexico D.F.</td>
+					<td><img src="D:\Trâm\CSE307\lab3\mexico.png">Mexico</td>
+					<td><input type="checkbox" name="" checked></td>
+				</tr>
+
+				<tr>
+					<td>Thomas Hardy</td>
+					<td>London</td>
+					<td><img src="D:\Trâm\CSE307\lab3\uk.png">UK</td>
+					<td><input type="checkbox" name=""></td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+
+</body>
+</html>
